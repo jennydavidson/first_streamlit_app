@@ -50,7 +50,7 @@ streamlit.write('The user entered ', fruit_choice)
 # write your own comment - puts this into a table
 
 streamlit.header("The fruit load list contains")
-def get_fruit_load_list:
+def get_fruit_load_list():
     with  my_cur = my_cnx.cursor() as my_cur:
           my_cur.execute("select * from fruit_load_list")
           return my_cur.fetchall()
